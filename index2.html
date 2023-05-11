@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metaverse</title>
+
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <style>
+  /* Center the parent div */
+/* Set the height of the container div */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c3e50;
+  position: relative;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(113, 111, 111); /* For browsers that do not support gradients */
+  background: radial-gradient(circle at 65% 15%, white 1px, rgb(143, 145, 145) 3%, rgb(65, 65, 66) 60%, rgb(187, 189, 189) 100%);  
+  position: relative;
+  bottom: -50px;
+  animation: float 5s linear infinite;
+}
+
+.ball2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(113, 111, 111); /* For browsers that do not support gradients */
+  background: radial-gradient(circle at 65% 15%, white 1px, rgb(143, 145, 145) 3%, rgb(65, 65, 66) 60%, rgb(187, 189, 189) 100%);  
+  position: relative;
+  bottom: -50px;
+  animation: float 10s linear infinite;
+}
+
+.ball3 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(113, 111, 111); /* For browsers that do not support gradients */
+  background: radial-gradient(circle at 65% 15%, white 1px, rgb(143, 145, 145) 3%, rgb(65, 65, 66) 60%, rgb(187, 189, 189) 100%);  
+  position: relative;
+  bottom: -50px;
+  animation: float 7s linear infinite;
+}
+
+.ball4 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(113, 111, 111); /* For browsers that do not support gradients */
+  background: radial-gradient(circle at 65% 15%, white 1px, rgb(143, 145, 145) 3%, rgb(65, 65, 66) 60%, rgb(187, 189, 189) 100%);  
+  position: relative;
+  bottom: -50px;
+  animation: float 8s linear infinite;
+}
+
+
+@keyframes float {
+  0% {
+    bottom: -50px;
+    transform: rotate(0deg);
+  }
+  50% {
+    bottom: calc(50% + 100px);
+    transform: rotate(180deg);
+  }
+  100% {
+    bottom: 100vh;
+    transform: rotate(360deg);
+  }
+}
+
+.ball:nth-child(1) {
+  left: calc(1% + 90% * (0/4));
+}
+
+.ball2:nth-child(1) {
+  left: calc(12% + 90% * (1/4));
+}
+
+.ball3:nth-child(1) {
+  left: calc(20% + 90% * (1/4));
+}
+
+.ball4:nth-child(1) {
+  left: calc(15% + 90% * (1/4));
+}
+
+.ball5:nth-child(1) {
+  left: calc(18% + 90% * (4/4));
+}
+
+   </style>
+</head>
+<body>
+  <div class="container">
+    <div class="ball"></div>
+    <div class="ball2"></div>
+    <div class="ball3"></div>
+    <div class="ball4"></div>
+    <div class="ball5"></div>
+  </div>
+  
+  
+</body>
+</html>

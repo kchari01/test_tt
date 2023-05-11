@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metaverse</title>
+
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <style>
+        .hero {
+        background: url(images/bg_img.jpg) center center/cover no-repeat fixed;
+        height: 100vh;
+       
+        align-items: center;
+        justify-content: center;
+        }
+
+        .plan {
+        background: url(images/m_image.avif) center center/cover no-repeat fixed;
+        height: 100%;
+       
+        align-items: center;
+        justify-content: center;
+        }
+
+        
+        .about {
+        background: url(images/about.avif) center center/cover no-repeat fixed;
+        height: 100vh;
+       
+        align-items: center;
+        justify-content: center;
+        }
+
+        
+
+        .heading {
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            animation: slide-in 1s ease-out;
+            color:aliceblue;
+        }
+
+        
+        
+        .m_heading {
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            color:aliceblue;
+        }
+
+
+        @keyframes slide-in {
+        0% {
+        transform: translateX(-100%);
+        }
+        100% {
+        transform: translateX(0);
+        }
+        }
+        .m_text
+        {
+            font-size: 48px;
+        font-weight: 700;
+
+        }
+
+        .text_1
+        {
+        font-size: 30px;
+        font-weight: 700;
+        }
+
+        .text_2
+        {
+           
+        background: #E89A13;
+        background: linear-gradient(to right, #E89A13 0%, #FF269A 50%, #8444BD 93%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        font-size: 30px;
+        }
+
+        .text_3
+        {
+        font-size: 30px;
+        font-weight: 700;
+        color:aliceblue;
+        }
+
+        .text_4
+        {
+           
+        background: #E89A13;
+        background: linear-gradient(to right, #E89A13 0%, #FF269A 50%, #8444BD 93%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        font-size: 20px;
+        }
+
+        .card-deck {
+  position: relative;
+}
+
+
+
+.card {
+  margin: 20px;
+  opacity: 0;
+  animation: move-up 8s linear running;
+  animation-iteration-count: 3;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, blue, rgb(209, 22, 54));
+  color: aliceblue;
+  border-radius: 5px;
+  padding: 10px 10px;
+ 
+
+}
+
+.card:nth-child(2)
+{
+  animation-delay: 1.0s;
+}
+.card:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+@keyframes move-up {
+  0% {
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  20% {
+    bottom: 10;
+    opacity: 1;
+    transform: translateY(-10%);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-20%);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(-30%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-40%);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(-60%);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(-70%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+.features {
+    background-color: transparent;
+  padding: 50px 0;
+}
+
+.feature-item {
+  position: relative;
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.feature-item .icon {
+  font-size: 40.5px;
+  margin-bottom: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.feature-item:hover .icon {
+  transform: rotate(360deg);
+}
+
+.feature-item .title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.feature-item:hover .title {
+  color: #1abc9c;
+}
+
+
+
+
+/*******************plan section css*********************/
+.outer-circle {
+
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  
+
+}
+
+.inner-circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgb(28, 27, 27);
+  border: 8px solid blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.revolving-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, blue, rgb(209, 22, 54));
+  color: #FFF;
+  transform-origin: 20% 50%;
+  animation: rotate 5s linear infinite;
+}
+
+
+
+.revolving-circle2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, blue, rgb(209, 22, 54));
+  color: #FFF;
+  transform-origin: 10% 50%;
+  animation: rotate 15s linear infinite;
+}
+
+
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(95px) rotate(-0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(95px) rotate(-360deg);
+  }
+}
+
+.inner-circle2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgb(28, 27, 27);
+  border: 8px solid blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.revolving-circle3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, blue, rgb(209, 22, 54));
+  color: #FFF;
+  transform-origin: 30% 70%;
+  animation: rotate2 5s linear infinite;
+}
+
+
+
+.revolving-circle4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, blue, rgb(209, 22, 54));
+  color: #FFF;
+  transform-origin: 30% 85%;
+  animation: rotate2 15s linear infinite;
+}
+
+@keyframes rotate2 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(151px) rotate(-0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(151px) rotate(-360deg);
+  }
+}
+
+
+
+
+
+.inner-circle3 {
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  background-color: rgb(28, 27, 27);
+  border: 8px solid blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 230px;
+  
+}
+
+
+/* Set a margin of 20px for screens larger than 768px */
+@media screen and (min-width: 768px) {
+  .inner-circle3 {
+    margin-left: 20px !important;
+  }
+}
+
+/* Set a margin of 30px for screens larger than 1024px */
+@media screen and (min-width: 1024px) {
+  .inner-circle3 {
+    margin-left: 320px !important;
+  }
+}
+
+
+
+.revolving-circle5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, blue, rgb(209, 22, 54));
+  color: #FFF;
+  transform-origin: 30% 70%;
+  animation: rotate3 8s linear infinite;
+}
+
+
+
+.revolving-circle6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, blue, rgb(209, 22, 54));
+  color: #FFF;
+  transform-origin: 30% 85%;
+  animation: rotate3 12s linear infinite;
+}
+
+@keyframes rotate3 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(210px) rotate(-0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(210px) rotate(-360deg);
+  }
+}
+
+.parent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Style the child div */
+    .child {
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .overlap-section {
+    
+   
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+      
+      </style>
+</head>
+<body>
+    <div class="container" style="border: 0px solid blue;">
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/infinity" width="30" height="30" class="d-inline-block align-top" alt="">
+          Metaverse
+        </a>
+
+        <button type="button" class="btn btn-primary">login</button>
+        <button type="button" class="btn btn-warning">signup</button>
+        <span class="navbar-text">
+            Call now: 888889999
+          </span>
+          <span class="navbar-text">
+           Email: metaverse@gmail.com
+          </span>
+      </nav>
+      <section class="hero">    
+              <div class="heading">    
+                <label >
+                <h4>THE</h4> 
+                <h2 class="m_text">METAVERSE</h2> 
+                <label class="text_1">CAN CHANGE </label> <label class="text_2">SOCIETY</label>
+                
+              </label>
+            </div>
+           
+              <div class="col-md-4 col-md-6 col-md-8 col-md-12">
+              
+              <div class="row">
+                <div class="col-md-4" style="border: 0px solid red;">
+              <div class="card">
+                <div class="card-content">
+                  <h3>Running days</h3>
+                  <p>6113</p>
+                </div>
+              </div>
+              </div>
+              <div class="col-md-4" >
+              <div class="card">
+                <div class="card-content">
+                  <h3>Online visitors</h3>
+                  <p>94</p>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+              <div class="card">
+                <div class="card-content">
+                  <h3>Total Investment</h3>
+                  <p>$0.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-content">
+                  <h3>Total withdrawls</h3>
+                  <p>0.00</p>
+                </div>
+            </div>
+              </div>
+            </div>
+      
+            <div class="row">
+                <div class="col-md-4">
+              <div class="card">
+                <div class="card-content">
+                  <h3>Project started</h3>
+                  <p>Feb 21</p>
+                </div>
+            </div>
+              </div>
+              <div class="col-md-4">
+              <div class="card">
+                
+                <div class="card-content">
+                  <h3>Visitors Online</h3>
+                  <p>6</p>
+                </div>
+            </div>
+              </div>
+            </div>
+      
+        </div>
+                 
+       
+      </section>
+      <div class="container" style="border: 0px solid blue;">
+  
+          <div class="row" >
+            <div class="col-md-3 feature-item">
+              <div class="icon"><i class="fa fa-cloud-download" ></i></div>
+
+              
+              
+              <h3 class="title">Best server</h3>
+            </div>
+            <div class="col-md-3 feature-item">
+              <div class="icon"><i class="fa fa-percent"></i></div>
+              <h5 class="title">Low commission</h5>
+            </div>
+            <div class="col-md-3 feature-item">
+              <div class="icon"><i class="fa fa-cog" ></i></div>
+              <h3 class="title">100% Secure</h3>
+            </div>
+            <div class="col-md-3 feature-item">
+              <div class="icon"><i  class="fa fa-desktop"></i></div>
+              <h3 class="title">Real Time Monitoring</h3>
+            </div>
+          </div>
+        </div>
+
+        <section>
+          <div class="container" style="border: 0px solid blue;">
+            <div class="row" >    
+            <div class="plan col-md-2 col-md-4 col-md-6 col-md-8 col-md-12">    
+              <div class="row" >  
+              <div class="m_heading">
+              <label class="text_4">INVESTMENT</label> <label class="text_3">PLANS </label> 
+              </div>
+            </div>
+            <div class="row" > 
+              <div class="parent">
+                
+              <div class="outer-circle ">
+                <div class="inner-circle3">
+                    <div class="revolving-circle5"><p>upto 0.2% plan 1</p></div>
+                    <div class="revolving-circle6">plan 2</div>
+        
+                    <div class="inner-circle2">
+        
+                    <div class="revolving-circle3">plan 3</div>
+                    <div class="revolving-circle4">plan 4</div>
+        
+                    <div class="inner-circle">
+                    <div class="revolving-circle">plan 5</div>
+                    <div class="revolving-circle2">plan 6</div>
+                    </div>
+        
+                    </div>
+                </div>
+            </div>
+    
+
+          
+        </div>
+            
+          </div>
+          
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <section>
+        <div class="container " style="border: 0px solid blue;">
+          <div class="row" >    
+          <div class="about col-md-2 col-md-4 col-md-6 col-md-8 col-md-12">    
+           
+            <div class="m_heading">
+            <label class="text_4">ABOUT</label> <label class="text_3">PLANS </label> 
+            </div>
+        
+        </div>
+      </div>
+    </div>
+    </section>
+       
+
+    </div>
+</body>
+</html>
